@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.PracticalTest02MainActivity">
+
+    <EditText
+        android:id="@+id/pokemonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_centerHorizontal="true"
+        android:text="Pokemon Name" />
+
+    <Button
+        android:id="@+id/sendRequest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Request"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/pokemonName" />
+
+    <ImageView
+        android:id="@+id/pokemonImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_launcher_foreground"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/sendRequest" />
+
+    <TextView
+        android:id="@+id/pokemonAbilities"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Abilitati"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/pokemonImage" />
+
+    <TextView
+        android:id="@+id/pokemonTypes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tipuri"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/pokemonAbilities" />
+</RelativeLayout>
